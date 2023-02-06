@@ -14,10 +14,11 @@ Material:
   - USE_BIG_SCANLINE
   - USE_COLLISION_RIPPLES
   - USE_EDGE_GLOW
-  - USE_HEXAGON_CLOUD
+  - USE_HEXAGON_GLOW
   - USE_INTERSECTION
   - USE_SCANLINES
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - USE_HEXAGON_CLOUD
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -101,12 +102,13 @@ Material:
     - USE_COLLISION_RIPPLES: 1
     - USE_EDGE_GLOW: 1
     - USE_HEXAGON_CLOUD: 1
+    - USE_HEXAGON_GLOW: 1
     - USE_INTERSECTION: 1
     - USE_SCANLINES: 1
     - _AlphaClip: 0
     - _AspectRatio: 0.5
     - _BigScanlineSpeed: 0.15
-    - _BigScanlineStrength: 0.25
+    - _BigScanlineStrength: 0.4
     - _BigScanlineThickness: 0.025
     - _Blend: 0
     - _BumpScale: 1
@@ -122,11 +124,13 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _GlowNoiseScale: 1
+    - _GlowSpeed: 4
     - _Heightmap_Strength: 0.01
     - _HexagonCloudRotation: 0.03
-    - _HexagonCloudScale: 3
-    - _HexagonCloudSpeed: 0.05
-    - _Hexagon_Strength: 50
+    - _HexagonCloudScale: 50
+    - _HexagonCloudSpeed: 0.1
+    - _Hexagon_Strength: 0.25
     - _IntersectionStrength: 1
     - _IntersectionThickness: 0.05
     - _Metallic: 0
@@ -137,7 +141,7 @@ Material:
     - _ReceiveShadows: 1
     - _RippleSpeed: 2.5
     - _RippleThickness: 0.05
-    - _RippleTime: 2.68
+    - _RippleTime: 2
     - _RippleTimeFalloff: 0.25
     - _ScanlineStrength: 0.02
     - _Smoothness: 0.5
@@ -152,7 +156,10 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EdgeGlowThickness: {r: 0.02, g: 0.04, b: 0, a: 0}
     - _EmissionColor: {r: 1.0067645, g: 1.6242347, b: 30.490566, a: 1}
-    - _RippleOrigin: {r: 0.38, g: 0.41, b: 0, a: 0}
+    - _GlowStrengthMinMax: {r: 0, g: 0.25, b: 0, a: 0}
+    - _HexagonStrengthMinMax: {r: 0, g: 0.35, b: 0, a: 0}
+    - _Hexagon_Cloud_Direction: {r: -1, g: -0.5, b: 0, a: 0}
+    - _RippleOrigin: {r: 0.25, g: 0.5, b: 0, a: 0}
     - _ScrollVelocity: {r: 0, g: 0.01, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
